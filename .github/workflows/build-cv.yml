@@ -1,0 +1,46 @@
+name: Build CV PDF
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'assets/cv.md'
+      - 'css/cv.css'
+      - 'scripts/**'
+      - '.github/workflows/build-cv.yml'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate HTML from Markdown
+        run: |
+          python3 scripts/generate_cv.py
+
+      - name: Install Google Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget fonts-liberation
+          wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt-get -fy install
+
+      - name: Build PDF via headless Chrome
+        run: |
+          bash scripts/build_cv_pdf.sh
+
+      - name: Commit updated CV assets
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(cv): auto-update HTML/PDF from cv.md'
+          file_pattern: 'assets/cv.html assets/cv.pdf'
+          branch: ${{ github.ref_name }}
+

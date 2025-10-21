@@ -384,7 +384,9 @@ footer {
 }
 
 .chatbot__window {
-    position: relative;
+    position: absolute;
+    right: 0;
+    bottom: 68px; /* 56px toggle + 12px gap */
     width: 320px;
     max-width: calc(100vw - 48px);
     background-color: #ffffff;
@@ -525,6 +527,7 @@ footer {
 
     .chatbot__window {
         width: calc(100vw - 32px);
+        bottom: 64px; /* slightly tighter on mobile */
         max-height: calc(100vh - 120px);
     }
 }
