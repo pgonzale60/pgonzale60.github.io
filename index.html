@@ -35,6 +35,10 @@
             <div class="about-content">
                 <p>I'm Pablo, a bioinformatician with over 10 years of experience in Python, R, HPC, and data visualisation, passionate about using AI to solve meaningful problems. I bring clarity to complex situations, ensuring teams understand goals and action items. My recent project, Notion Theme Explorer, uses Gemini AI to help entrepreneurs and creatives uncover their authentic values—an example of my belief that AI can empower innovation. I'm excited to contribute my analytical skills and forward-thinking mindset to a tech or biotech startup.</p>
             </div>
+            <div class="cv-link">
+                <a href="assets/cv.pdf" class="button" target="_blank">Download My CV (PDF)</a>
+                <a href="assets/cv.html" class="button" target="_blank">View Online CV</a>
+            </div>
         </div>
     </section>
 
@@ -64,9 +68,6 @@
                         <li><strong>Adaptability:</strong> I stay updated on AI trends, integrating tools like Gemini AI into my work to stay ahead of the curve.</li>
                     </ul>
                 </div>
-            </div>
-            <div class="cv-link">
-                <a href="assets/cv.pdf" class="button" target="_blank">Download My CV</a>
             </div>
         </div>
     </section>
@@ -155,5 +156,32 @@
             <p class="copyright"> 2025 Pablo Gonzalez. All rights reserved.</p>
         </div>
     </footer>
+    <div class="chatbot" id="chatbot-assistant">
+        <button class="chatbot__toggle" type="button" aria-label="Open chat with Pablo's assistant">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div class="chatbot__window" aria-hidden="true">
+            <div class="chatbot__header">
+                <div class="chatbot__title">
+                    <h3>Ask Pablo's Assistant</h3>
+                    <p>Curious about Pablo's work? I'm here to help.</p>
+                </div>
+                <button class="chatbot__close" type="button" aria-label="Close chat">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="chatbot__messages" aria-live="polite">
+                <div class="chatbot__message chatbot__message--bot">Hi there! I'm here to answer quick questions about Pablo's skills, projects, and availability.</div>
+            </div>
+            <form class="chatbot__form" autocomplete="off">
+                <label class="sr-only" for="chatbot-input">Type your message</label>
+                <input id="chatbot-input" type="text" name="message" placeholder="Ask about skills, projects, or contact..." aria-label="Message for Pablo's assistant">
+                <button type="submit" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="js/chatbot.js"></script>
 </body>
 </html>
