@@ -16,7 +16,7 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 - **Nextflow Automation**: DSL2, nf‑core patterns, schema‑driven parameters, channel design, and debugging.
 - **Reproducible Environments**: Docker/OCI, Singularity/Apptainer.
 - **Collaboration & Traceability**: GitLab merge requests, code review, changelog management; JIRA ticketing linked to MRs.
-- **CI/CD & Verification**: GitLab CI/CD, smoke tests, automated documentation (`parse_docs`).
+- **CI/CD & Verification**: GitLab CI/CD, smoke tests, automated documentation.
 - **HPC & Cloud**: Slurm; working familiarity with AWS (S3, EC2 basics).
 - **Analysis & Glue**: Python (pandas, NumPy), R (tidyverse, Shiny), Bash; Rust/PHP (familiar).
 - **Reporting**: Coverage metrics (mosdepth), VCF stats, HTML report generation.
@@ -31,8 +31,6 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 - Assembled and evolved the `wf-pgx` research workflow from a barebones template to a usable pipeline (available upon request); added representative datasets and automated documentation.
 - Supported biopharma workflows aimed toward regulatory compliance (team efforts): `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
 - Delivered Python utilities for variant calling/analysis across human, cattle, and bacterial datasets; integrated into pipelines and CI.
-- Consolidated PharmCAT/Chinook artefacts into a unified `star_alleles.tsv`, preserving raw JSON for traceability.
-- Improved documentation quality and consistency via `parse_docs`, schema/output definitions, and templated READMEs.
 - Collaboration & quality: GitLab CI/CD; JIRA ↔ MR traceability; code reviews. Speaking: active in bioinformatics tools journal club (3 sessions/year).
 
 ### Winter Genomics — Bioinformatics Intern  
@@ -41,10 +39,12 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 - Designed a MySQL‑backed variant database with a web interface to support collaborators’ queries and curation.
 - Built internal R scripts and contributed to pipeline automation for host–pathogen studies.
 
-### Independent Bioinformatics Consultant  
-*Remote • 2019 – 2022*
-- Migrated academic genomics scripts to reproducible Nextflow pipelines; delivered Singularity/Apptainer‑enabled HPC deployments.
-- Rolled out Git‑based collaboration workflows (branching, reviews, CI smoke tests) to improve team velocity and code quality.
+### Wellcome Sanger Institute & University of Cambridge — Doctoral Researcher  
+*Cambridge, UK • 2020 – 2023*
+- Developed workflows to analyse large biological datasets (genomes and metagenomes).
+- Performed bioinformatic analyses of genomes and metagenomes.
+- Gave invited and contributed talks to a variety of audiences.
+- Provided guidance and training to students.
 
 ---
 
@@ -71,7 +71,7 @@ Context and outcomes (selected):
 - Stevens, L., Martínez-Ugalde, I., *et al.* (2023). *Ancient diversity in host-parasite interaction genes in a model parasitic nematode.* Nature Communications, 14(1), 7776.
 - Gonzalez de la Rosa, P. M., *et al.* (2021). *A telomere-to-telomere assembly of Oscheius tipulae and the evolution of rhabditid nematode chromosomes.* G3, 11(1), jkaa020.
 
-Full publication list available on request.
+Full list of publications: https://scholar.google.de/citations?hl=en&user=fzwjLYIAAAAJ&view_op=list_works&sortby=pubdate
 
 ---
 
