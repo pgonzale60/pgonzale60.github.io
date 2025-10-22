@@ -1,7 +1,7 @@
 # Pablo González de la Rosa
 
 Bioinformatician | Oxford Nanopore Technologies  
-Email: pgonzale60@gmail.com • GitHub: github.com/pgonzale60 • Remote-friendly (Oxford, UK)
+Website: https://pgonzale60.github.io/ • Email: pgonzale60@gmail.com • GitHub: https://github.com/pgonzale60 • Remote-friendly (Oxford, UK)
 
 ---
 
