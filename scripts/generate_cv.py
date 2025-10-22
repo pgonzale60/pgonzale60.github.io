@@ -41,6 +41,8 @@ def md_inline_format(text: str) -> str:
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     # Italic *...* (avoid matching bold which is already replaced)
     text = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", text)
+    # Inline code `...` (avoid matching triple backticks here)
+    text = re.sub(r"(?<!`)`([^`]+?)`(?!`)", r"<code>\1</code>", text)
     # Note: We intentionally don't auto-link raw URLs to avoid
     # interfering with Markdown links; use explicit [text](url) in md.
     return text
@@ -67,8 +69,34 @@ def md_to_html(md: str) -> str:
             html_lines.append("</ul>")
             in_list = False
 
+    in_code_block = False
+    code_buf: list[str] = []
+
     for raw in lines:
         line = raw.rstrip("\n")
+        # Fenced code blocks using ```
+        if line.strip().startswith("```"):
+            if not in_code_block:
+                flush_paragraph()
+                close_list()
+                in_code_block = True
+                code_buf = []
+            else:
+                # close block
+                in_code_block = False
+                code_html = "\n".join(code_buf)
+                code_html = (
+                    code_html.replace("&", "&amp;")
+                    .replace("<", "&lt;")
+                    .replace(">", "&gt;")
+                )
+                html_lines.append(f"<pre><code>{code_html}\n</code></pre>")
+                code_buf = []
+            continue
+
+        if in_code_block:
+            code_buf.append(line)
+            continue
         # Horizontal rule
         if re.fullmatch(r"\s*-{3,}\s*", line):
             flush_paragraph()
