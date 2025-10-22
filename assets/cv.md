@@ -27,11 +27,10 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 
 ### Oxford Nanopore Technologies — Bioinformatician  
 *Oxford, UK • Nov 2023 – Present*
-- Built and maintained Nextflow pipelines for targeted sequencing (schema‑driven parameters, containerised modules, CI smoke tests).
-- Assembled and evolved the `wf-pgx` research workflow from a barebones template to a usable pipeline (available upon request); added representative datasets and automated documentation.
+- Built and maintain the `wf-pgx` Nextflow research workflow (available upon request); added representative datasets and automated documentation.
 - Supported biopharma workflows aimed toward regulatory compliance (team efforts): `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
 - Delivered Python utilities for variant calling/analysis across human, cattle, and bacterial datasets; integrated into pipelines and CI.
-- Collaboration & quality: GitLab CI/CD; JIRA ↔ MR traceability; code reviews. Speaking: active in bioinformatics tools journal club (3 sessions/year).
+- Collaboration & quality: GitLab CI/CD; JIRA ↔ MR traceability; code reviews. Speaking: active in bioinformatics tools journal club.
 
 ### Winter Genomics — Bioinformatics Intern  
 *Mexico City, Mexico • Aug 2013 – Nov 2015*
@@ -58,7 +57,7 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 - **AI-assisted Preference Matching (personal R&D)**: Prototyped LLM‑assisted workflows to match user preferences against free‑text (e.g., adverts) to reduce manual screening.
 
 Context and outcomes (selected):
-- wf‑pgx: improved clarity via schema‑driven params and docs automation; easier review for research users (available on request).
+- wf‑pgx: assembled and evolved the `wf-pgx` research workflow from a barebones template to a usable pipeline.
 - Biopharma QC: supported team delivery of QC workflows aligned with regulatory expectations; clearer installation/qualification steps.
 - Verification Suite: standardised release checks and metrics diffs; faster validation cycles.
 - AI matching: accelerated manual screening tasks using LLM‑assisted triage and ranking prototypes.
@@ -93,13 +92,6 @@ Full list of publications: https://scholar.google.de/citations?hl=en&user=fzwjLY
 - **HPC & Cloud**: Slurm; AWS familiarity (S3, EC2 basics)
 - **AI/LLM Prototyping**: Prompting and LLM‑assisted extraction for text triage (early‑stage prototypes)
 - **Reporting**: matplotlib, Plotly, Shiny, custom HTML reports
-
----
-
-## Professional Development & Community
-- Nextflow Summit attendee; contributor to nf-core discussions and module reviews.
-- Internal trainer for reproducible workflow practices and code review standards.
-- Active in cross-functional initiatives linking wet-lab requirements with informatics pipelines.
 
 ---
 
