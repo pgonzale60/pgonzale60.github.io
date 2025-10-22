@@ -50,9 +50,8 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 ---
 
 ## Selected Projects
-- **wf-pgx (ONT)**: Assembled and evolved research-use pharmacogenomics workflow from a template; representative datasets and docs for internal/research users.
+- **wf-pgx (ONT)**: Assembled and evolved research-use pharmacogenomics workflow from a template; prepared a public [release note](https://epi2me.nanoporetech.com/pgx_as_2025.07/) of accompanying data and results representative datasets and docs for internal/research users.
 - **Biopharma QC Workflows (team support)**: Contributed to workflows aimed toward regulatory compliance: `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
-- **Verification Workflow Suite**: Reusable Nextflow modules for coverage reporting, variant metrics, and metrics diffs to validate releases across datasets.
 - **Chromosome-scale Genome Annotation (MSc)**: Nextflow workflow to annotate multi‑megabase animal genomes; integrated gene prediction, repeat masking, and evidence-driven refinement for mid-scale HPC.
 - **Assembly Completeness Assessment (PhD)**: Automated pipeline to assess completeness of newly assembled multi‑megabase animal genomes using orthology- and k‑mer–based metrics.
 - **GEO Differential Expression Automation (BSc thesis)**: Automated microarray-based differential expression across dozens of GEO experiments using GNU Make; downloaded datasets and Brainarray annotations, inferred experimental designs, executed group-vs-group contrasts, and summarised results in a single table.
