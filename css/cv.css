@@ -8,6 +8,7 @@
   --muted: #555;
   --rule: #e6e6e6;
   --accent: #0a84ff;
+  --section: #1f3a61;
 }
 
 * { box-sizing: border-box; }
@@ -27,8 +28,8 @@ body {
 }
 
 /* Headings */
-h1 { font-size: 2.8rem; line-height: 1.1; margin: 0 0 4px 0; font-weight: 750; }
-h2 { font-size: 1.6rem; margin: 18px 0 8px; letter-spacing: .02em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+h1 { font-size: 2.9rem; line-height: 1.1; margin: 0 0 6px 0; font-weight: 760; }
+h2 { font-size: 1.55rem; margin: 22px 0 10px; letter-spacing: .02em; text-transform: uppercase; color: var(--section); font-weight: 720; }
 h3 { font-size: 1.4rem; margin: 10px 0 4px; font-weight: 650; }
 
 p { font-size: 1.25rem; margin: 6px 0 10px; }
@@ -36,22 +37,24 @@ ul { margin: 6px 0 10px 18px; padding: 0; }
 li { margin: 3px 0; font-size: 1.25rem; }
 strong { font-weight: 700; }
 em { font-style: italic; }
-hr { border: 0; border-top: 1px solid var(--rule); margin: 14px 0; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 16px 0; }
 
 /* Intro block: style first heading and subsequent meta lines for a polished header */
-.cv > h1:first-child { margin-top: 4px; font-size: 3rem; }
-.cv > p:nth-of-type(1) { font-size: 1.5rem; color: var(--muted); margin-top: 2px; }
+.cv > h1:first-child { margin-top: 4px; font-size: 3.1rem; }
+.cv > p:nth-of-type(1) { font-size: 1.45rem; color: var(--muted); margin-top: 2px; }
 .cv > p:nth-of-type(2) { font-size: 1.25rem; color: var(--muted); }
 
+/* Add subtle separation below the header block */
+.cv > h1:first-child + p + hr { border-color: #dfe3ea; }
+
 /* Experience section tweaks */
-h3 + p { color: var(--muted); font-weight: 500; margin-top: 2px; }
+h3 { color: #0f172a; }
+h3 + p { color: var(--muted); font-weight: 500; margin-top: 2px; font-style: italic; }
 
 /* Subtle bullets */
-ul { list-style: none; }
-ul li { position: relative; padding-left: 14px; }
-ul li::before {
-  content: ""; position: absolute; left: 0; top: .7em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
-}
+/* Standard bullets for ATS-friendliness */
+ul { list-style: disc; }
+ul li { margin-left: 18px; padding-left: 0; }
 
 /* Print refinements */
 @media print {
@@ -60,4 +63,3 @@ ul li::before {
   h1 { margin-top: 0; }
   hr { border-color: #dcdcdc; }
 }
-

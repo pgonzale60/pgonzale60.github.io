@@ -6,18 +6,20 @@ Email: pgonzale60@gmail.com • GitHub: github.com/pgonzale60 • Remote-friendl
 ---
 
 ## Professional Summary
-Bioinformatics workflow engineer specialising in high-throughput genomic analysis, pipeline automation, and verification. Maintainer of the `wf-pgx` Nextflow workflow, delivering reproducible pharmacogenomics analyses across regulated environments. Experienced in containerised deployments, Git-centric collaboration (code review, CI/CD, testing), and ensuring robustness and scalability for verification workflows. Passionate about building infrastructure that keeps complex scientific software traceable, testable, and production-ready. Comfortable blending Python, Rust, and Nextflow to turn research ideas into robust production pipelines. Longstanding focus on automation (from GNU Make and PHP to modern CI/CD) and continuously integrating AI/NLP to streamline text-heavy tasks such as matching user preferences against free‑text from hundreds of adverts.
+Bioinformatics workflow engineer with 8+ years building reproducible genomic analysis pipelines. Strong in Nextflow, containerisation, and CI/CD; maintainer of `wf-pgx` (research‑use only).
+
+I turn research into robust systems with Python and R, and an automation‑first mindset (from GNU Make to modern CI). I prototype LLM‑assisted workflows to streamline text‑heavy tasks when useful, while following quality practices aligned with ISO‑style accreditation goals.
 
 ---
 
 ## Core Competencies
-- **Workflow Engineering**: Nextflow DSL2, nf-core patterns, schema-driven parameters, ingress/egress design, resource profiling.
-- **Containerisation & Build Automation**: Docker/OCI, Singularity, Whalefish (automated SHA-tagged containers from Git repos), multi-arch support.
-- **Software Collaboration**: Git workflows, code review, design documentation, pair debugging, changelog management.
-- **CI/CD & Verification**: GitHub Actions, Jenkins, regression suites, smoke tests, container provenance, automated docs (`parse_docs`).
-- **Cloud & HPC**: AWS Batch, Slurm, caching strategies, cost/performance tuning.
-- **Data Handling**: Python (pandas, NumPy), R (tidyverse, Shiny), Bash, Rust for performance-critical glue.
-- **Observability & Reporting**: Coverage metrics (mosdepth), VCF statistics, HTML report generation (`workflow-glue`).
+- **Workflow Engineering**: Nextflow DSL2, nf-core patterns, schema‑driven parameters, clear I/O contracts.
+- **Containerisation & Builds**: Docker/OCI, Singularity/Apptainer; reproducible environments.
+- **Software Collaboration**: Git workflows, code review, design documentation, changelog management.
+- **CI/CD & Verification**: GitHub Actions/Jenkins, smoke tests, automated documentation (`parse_docs`).
+- **HPC & Cloud**: Slurm; working familiarity with AWS (S3, EC2 basics).
+- **Data Handling**: Python (pandas, NumPy), R (tidyverse, Shiny), Bash; Rust/PHP (basic familiarity).
+- **Reporting**: Coverage metrics (mosdepth), VCF stats, HTML report generation.
 
 ---
 
@@ -25,25 +27,23 @@ Bioinformatics workflow engineer specialising in high-throughput genomic analysi
 
 ### Oxford Nanopore Technologies — Bioinformatician  
 *Oxford, UK • Nov 2023 – Present*
-- Built Nextflow pipelines for human targeted sequencing applications using software development best practices (Git, containers, CI).
-- Maintained and extended `epi2me-labs/wf-pgx` (pharmacogenomics workflow) with container provenance, CI smoke tests, and schema-driven parameters.
-- Built custom Python and Rust utilities for variant detection and analysis across human, cattle, and bacterial datasets.
-- Curated genomic datasets to validate analytical performance and ensure high-quality results.
-- Collaborated with cross-functional teams to improve pipeline efficiency, accuracy, and reproducibility.
-- Replaced fragmented PharmCAT/Chinook artefacts with a unified `star_alleles.tsv` while retaining raw match JSON for audit trails.
-- Structured documentation with `parse_docs`, schema/output definitions, and automated README generation.
-- Participated actively in a bioinformatics tools journal club; presented three sessions in the past year.
+- Built and maintained Nextflow pipelines for targeted sequencing (schema‑driven parameters, containerised modules, CI smoke tests).
+- Maintained and evolved `epi2me-labs/wf-pgx` (research‑use only) with representative datasets and automated documentation.
+- Delivered Python utilities for variant calling/analysis across human, cattle, and bacterial datasets; integrated into pipelines and CI.
+- Consolidated PharmCAT/Chinook artefacts into a unified `star_alleles.tsv`, preserving raw JSON for traceability.
+- Improved documentation quality and consistency via `parse_docs`, schema/output definitions, and templated READMEs.
+- Speaking & engagement: active in bioinformatics tools journal club (3 sessions/year).
 
 ### Winter Genomics — Bioinformatics Intern  
 *Mexico City, Mexico • Aug 2013 – Nov 2015*
-- Performed microarray-based expression profiling and genotyping.
-- Developed a MySQL database with a web interface for genomic variants.
-- Built internal R analysis scripts and supported pipeline automation for host–pathogen studies.
+- Performed microarray‑based expression profiling and genotyping; automated common analyses and QC.
+- Designed a MySQL‑backed variant database with a web interface to support collaborators’ queries and curation.
+- Built internal R scripts and contributed to pipeline automation for host–pathogen studies.
 
 ### Independent Bioinformatics Consultant  
 *Remote • 2019 – 2022*
-- Migrated academic genomics scripts to reproducible Nextflow pipelines; delivered Singularity/Apptainer-enabled HPC deployments.
-- Established Git-based collaboration workflows (branching, review templates, CI smoke tests) for university labs.
+- Migrated academic genomics scripts to reproducible Nextflow pipelines; delivered Singularity/Apptainer‑enabled HPC deployments.
+- Rolled out Git‑based collaboration workflows (branching, reviews, CI smoke tests) to improve team velocity and code quality.
 
 ---
 
@@ -52,10 +52,14 @@ Bioinformatics workflow engineer specialising in high-throughput genomic analysi
 - **Verification Workflow Suite**: Reusable Nextflow modules for coverage reporting, variant metrics, and report diffs to validate releases across datasets.
 - **Chromosome-scale Genome Annotation (MSc)**: Nextflow workflow to annotate multi‑megabase animal genomes; integrated gene prediction, repeat masking, and evidence-driven refinement for mid-scale HPC.
 - **Assembly Completeness Assessment (PhD)**: Automated pipeline to assess completeness of newly assembled multi‑megabase animal genomes using orthology- and k‑mer–based metrics.
-- **Whalefish Integration**: Wired Nextflow builds into Whalefish so every git commit produces an SHA-tagged container traceable in production.
 - **GEO Differential Expression Automation (BSc thesis)**: Automated microarray-based differential expression across dozens of GEO experiments using GNU Make; downloaded datasets and Brainarray annotations, inferred experimental designs, executed group-vs-group contrasts, and summarised results in a single table.
 - **Regulatory Gene Visualisation (BSc training)**: Automated gene visualisation for a gene regulation website using PHP and available regulatory annotations.
-- **AI-assisted Preference Matching (personal R&D)**: Prototyped NLP/AI workflows to match user preferences against large volumes of free-text (e.g., adverts), reducing manual review effort.
+- **AI-assisted Preference Matching (personal R&D)**: Prototyped LLM‑assisted workflows to match user preferences against free‑text (e.g., adverts) to reduce manual screening.
+
+Context and outcomes (selected):
+- wf‑pgx: improved clarity via schema‑driven params and docs automation; easier review for research users.
+- Verification Suite: standardised release checks and metrics diffs; faster validation cycles.
+- AI matching: accelerated manual screening tasks using LLM‑assisted triage and ranking prototypes.
 
 ---
 
@@ -81,13 +85,12 @@ Full publication list available on request.
 ---
 
 ## Technical Toolkit
-- **Languages**: Python, R, Rust, Bash, SQL, PHP.
-- **Workflow Tools**: Nextflow DSL2, nf-core modules, Snakemake (legacy support), GNU Make.
-- **Containers**: Docker, Singularity/Apptainer, Whalefish, container registries.
-- **CI/CD**: GitHub Actions, Jenkins, pre-commit, changelog automation.
-- **Infra**: AWS Batch, HPC schedulers (Slurm), S3, Artefact repositories.
-- **AI/NLP**: Embeddings, semantic search/matching, LLM-assisted extraction, prompt design; practical experience applying LLMs (OpenAI/Gemini) to automate text-heavy triage and matching tasks.
-- **Dataviz & Reporting**: matplotlib, Plotly, Shiny, custom HTML reports via `workflow-glue`.
+- **Languages**: Python (advanced), R (advanced), Bash (proficient), SQL (proficient), Rust/PHP (familiar)
+- **Workflow Tools**: Nextflow DSL2 (nf‑core patterns), schema‑driven parameters, reproducible containers (Docker/Singularity)
+- **CI/CD & Quality**: GitHub Actions/Jenkins, smoke tests, docs automation; familiarity with ISO‑aligned quality practices
+- **HPC & Cloud**: Slurm; AWS familiarity (S3, EC2 basics)
+- **AI/LLM Prototyping**: Prompting and LLM‑assisted extraction for text triage (early‑stage prototypes)
+- **Reporting**: matplotlib, Plotly, Shiny, custom HTML reports
 
 ---
 
