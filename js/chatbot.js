@@ -11,39 +11,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const input = chatbot.querySelector('#chatbot-input');
     const messages = chatbot.querySelector('.chatbot__messages');
 
-    const fallbackMessage = "I didn't catch that just yet. Try asking about Pablo's skills, projects, CV, contact details, or availability.";
+    const fallbackMessage = "Ask about Pablo's skills, projects/case studies, CV, contact, or availability.";
     const responses = [
         {
             keywords: ['hello', 'hi', 'hey', 'hola', 'hallo'],
-            answer: "Hi there! I'm Pablo's assistant. Ask me about his skills, recent projects, or how to get in touch."
+            answer: "Hi there! I'm Pablo's assistant. Ask about his skills, recent projects, CV, or how to get in touch."
         },
         {
             keywords: ['skill', 'skills', 'tech', 'stack'],
-            answer: 'Pablo works daily with Python (pandas, NumPy, FastAPI), R (Shiny, ggplot2), React, SQL, Nextflow, AWS, and GenAI tools such as Gemini AI.'
+            answer: 'Core skills: Nextflow DSL2 (schema-driven params, strong debugging), containers (Docker/Singularity), GitLab CI/CD + JIRA traceability; Python & R; Slurm; AWS familiarity (S3/EC2 basics).'
         },
         {
-            keywords: ['project', 'projects', 'portfolio', 'notion', 'explorer'],
-            answer: "His Notion Theme Explorer showcases how he combines Python, React, and Gemini AI. You can explore more work in the Projects section or on GitHub."
+            keywords: ['project', 'projects', 'case study', 'case studies', 'portfolio'],
+            answer: 'Recent work includes a research-use pharmacogenomics workflow (wf-pgx, available upon request), a verification workflow suite, and team support on biopharma QC workflows (wf-vax-qc, wf-plasmid-qc, wf-installation-qualification).'
+        },
+        {
+            keywords: ['ai', 'llm', 'automation'],
+            answer: 'He prototypes LLM-assisted helpers to speed text-heavy tasks (triage/matching). Practical and ROI-focused; early-stage prototypes.'
         },
         {
             keywords: ['cv', 'resume', 'curriculum'],
-            answer: 'Grab the latest CV via the "Download My CV" button or by opening assets/cv.pdf.'
+            answer: 'View CV online: assets/cv.html — Download PDF: assets/cv.pdf'
         },
         {
             keywords: ['contact', 'email', 'reach', 'linkedin', 'connect'],
-            answer: 'Reach him at pgonzale60@gmail.com or connect on LinkedIn at linkedin.com/in/pablo-gonzalez-de-la-rosa-1b663a99.'
+            answer: 'Email: pgonzale60@gmail.com • LinkedIn: linkedin.com/in/pablo-gonzález-de-la-rosa-1b663a99'
         },
         {
             keywords: ['experience', 'background', 'bio', 'about'],
-            answer: 'Pablo is a bioinformatician with 10+ years working in genomics, data analysis, and AI-driven tooling across academia and startups.'
+            answer: 'ONT (Bioinformatician): targeted sequencing workflows with Nextflow and CI. Doctoral Researcher (Sanger/Cambridge): genome & metagenome analysis, workflow development, training; Winter Genomics (Intern): microarrays and DB tooling.'
         },
         {
-            keywords: ['availability', 'hire', 'work with', 'collaborate', 'collaboration', 'open roles', 'opportunity'],
-            answer: 'He is exploring roles where he can blend data analytics, bioinformatics, and GenAI. Drop a note if you have something in mind!'
-        },
-        {
-            keywords: ['ai', 'genai', 'gemini', 'chatgpt', 'automation'],
-            answer: 'Pablo prototypes GenAI workflows that surface insights faster - think automated research summaries, Notion knowledge helpers, and more.'
+            keywords: ['publications', 'papers', 'scholar'],
+            answer: 'Full publications: scholar.google.de/citations?hl=en&user=fzwjLYIAAAAJ&view_op=list_works&sortby=pubdate'
         }
     ];
 
