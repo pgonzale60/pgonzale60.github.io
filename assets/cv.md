@@ -34,18 +34,18 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 - Established practices around GitLab CI/CD, JIRA ↔ MR traceability, and code review quality.
 - Presented journal club sessions on pipeline debugging and workflow patterns.
 
-### Winter Genomics — Bioinformatics Intern  
-*Mexico City, Mexico • Aug 2013 – Nov 2015*
-- Designed and deployed a MySQL‑backed variant database with a web interface to support collaborators’ queries and curation workflows.
-- Developed R/Bash automation for microarray QC; standardised gene expression analyses and reduced turnaround time.
-- Contributed to host–pathogen comparative analysis workflows; supported publication‑grade datasets and figures.
-
 ### Wellcome Sanger Institute & University of Cambridge — Doctoral Researcher  
 *Cambridge, UK • 2020 – 2023*
 - Architected workflows for large‑scale genomic and metagenomic analyses in evolutionary studies.
 - Automated genome assembly quality assessment using orthology and k‑mer metrics; integrated into multiple research projects to reduce manual validation.
 - Delivered invited and contributed talks at conferences and seminars on genome assembly and chromosome evolution.
 - Mentored MSc/PhD students in bioinformatics best practices and open‑source tooling; co‑authored peer‑reviewed publications.
+
+### Winter Genomics — Bioinformatics Intern  
+*Mexico City, Mexico • Aug 2013 – Nov 2015*
+- Designed and deployed a MySQL‑backed variant database with a web interface to support collaborators’ queries and curation workflows.
+- Developed R/Bash automation for microarray QC; standardised gene expression analyses and reduced turnaround time.
+- Contributed to host–pathogen comparative analysis workflows; supported publication‑grade datasets and figures.
 
 ---
 
