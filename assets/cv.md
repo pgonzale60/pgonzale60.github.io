@@ -6,19 +6,19 @@ Email: pgonzale60@gmail.com • GitHub: github.com/pgonzale60 • Remote-friendl
 ---
 
 ## Professional Summary
-Bioinformatics workflow engineer with 8+ years building reproducible genomic analysis pipelines. Strong in Nextflow, containerisation, and CI/CD; maintainer of `wf-pgx` (research‑use only).
+Bioinformatics workflow engineer with 8+ years building reproducible genomic analysis pipelines. Proficient in Nextflow (DSL2) with a focus on debugging, module composition, and automation. Experienced with containerisation and GitLab CI/CD in ISO‑aligned quality settings. Built the `wf-pgx` research workflow from a template to a usable pipeline (available upon request).
 
-I turn research into robust systems with Python and R, and an automation‑first mindset (from GNU Make to modern CI). I prototype LLM‑assisted workflows to streamline text‑heavy tasks when useful, while following quality practices aligned with ISO‑style accreditation goals.
+I use Nextflow as the backbone of bioinformatics automation, supported by Python and R for analysis and glue. I also prototype LLM‑assisted helpers to streamline text‑heavy tasks when appropriate.
 
 ---
 
 ## Core Competencies
-- **Workflow Engineering**: Nextflow DSL2, nf-core patterns, schema‑driven parameters, clear I/O contracts.
-- **Containerisation & Builds**: Docker/OCI, Singularity/Apptainer; reproducible environments.
-- **Software Collaboration**: Git workflows, code review, design documentation, changelog management.
-- **CI/CD & Verification**: GitHub Actions/Jenkins, smoke tests, automated documentation (`parse_docs`).
+- **Nextflow Automation**: DSL2, nf‑core patterns, schema‑driven parameters, channel design, and debugging.
+- **Reproducible Environments**: Docker/OCI, Singularity/Apptainer.
+- **Collaboration & Traceability**: GitLab merge requests, code review, changelog management; JIRA ticketing linked to MRs.
+- **CI/CD & Verification**: GitLab CI/CD, smoke tests, automated documentation (`parse_docs`).
 - **HPC & Cloud**: Slurm; working familiarity with AWS (S3, EC2 basics).
-- **Data Handling**: Python (pandas, NumPy), R (tidyverse, Shiny), Bash; Rust/PHP (basic familiarity).
+- **Analysis & Glue**: Python (pandas, NumPy), R (tidyverse, Shiny), Bash; Rust/PHP (familiar).
 - **Reporting**: Coverage metrics (mosdepth), VCF stats, HTML report generation.
 
 ---
@@ -28,11 +28,12 @@ I turn research into robust systems with Python and R, and an automation‑first
 ### Oxford Nanopore Technologies — Bioinformatician  
 *Oxford, UK • Nov 2023 – Present*
 - Built and maintained Nextflow pipelines for targeted sequencing (schema‑driven parameters, containerised modules, CI smoke tests).
-- Maintained and evolved `epi2me-labs/wf-pgx` (research‑use only) with representative datasets and automated documentation.
+- Assembled and evolved the `wf-pgx` research workflow from a barebones template to a usable pipeline (available upon request); added representative datasets and automated documentation.
+- Supported biopharma workflows aimed toward regulatory compliance (team efforts): `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
 - Delivered Python utilities for variant calling/analysis across human, cattle, and bacterial datasets; integrated into pipelines and CI.
 - Consolidated PharmCAT/Chinook artefacts into a unified `star_alleles.tsv`, preserving raw JSON for traceability.
 - Improved documentation quality and consistency via `parse_docs`, schema/output definitions, and templated READMEs.
-- Speaking & engagement: active in bioinformatics tools journal club (3 sessions/year).
+- Collaboration & quality: GitLab CI/CD; JIRA ↔ MR traceability; code reviews. Speaking: active in bioinformatics tools journal club (3 sessions/year).
 
 ### Winter Genomics — Bioinformatics Intern  
 *Mexico City, Mexico • Aug 2013 – Nov 2015*
@@ -50,6 +51,7 @@ I turn research into robust systems with Python and R, and an automation‑first
 ## Selected Projects
 - **wf-pgx Evolution (ONT)**: Designed and now maintain flagship pharmaco-genomics workflow; added automated container builds, regression suites, and robust documentation pipeline.
 - **Verification Workflow Suite**: Reusable Nextflow modules for coverage reporting, variant metrics, and report diffs to validate releases across datasets.
+ - **Biopharma QC Workflows (team support)**: Contributed to workflows aimed toward regulatory compliance: `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
 - **Chromosome-scale Genome Annotation (MSc)**: Nextflow workflow to annotate multi‑megabase animal genomes; integrated gene prediction, repeat masking, and evidence-driven refinement for mid-scale HPC.
 - **Assembly Completeness Assessment (PhD)**: Automated pipeline to assess completeness of newly assembled multi‑megabase animal genomes using orthology- and k‑mer–based metrics.
 - **GEO Differential Expression Automation (BSc thesis)**: Automated microarray-based differential expression across dozens of GEO experiments using GNU Make; downloaded datasets and Brainarray annotations, inferred experimental designs, executed group-vs-group contrasts, and summarised results in a single table.
@@ -57,7 +59,8 @@ I turn research into robust systems with Python and R, and an automation‑first
 - **AI-assisted Preference Matching (personal R&D)**: Prototyped LLM‑assisted workflows to match user preferences against free‑text (e.g., adverts) to reduce manual screening.
 
 Context and outcomes (selected):
-- wf‑pgx: improved clarity via schema‑driven params and docs automation; easier review for research users.
+- wf‑pgx: improved clarity via schema‑driven params and docs automation; easier review for research users (available on request).
+- Biopharma QC: supported team delivery of QC workflows aligned with regulatory expectations; clearer installation/qualification steps.
 - Verification Suite: standardised release checks and metrics diffs; faster validation cycles.
 - AI matching: accelerated manual screening tasks using LLM‑assisted triage and ranking prototypes.
 
@@ -85,9 +88,9 @@ Full publication list available on request.
 ---
 
 ## Technical Toolkit
-- **Languages**: Python (advanced), R (advanced), Bash (proficient), SQL (proficient), Rust/PHP (familiar)
-- **Workflow Tools**: Nextflow DSL2 (nf‑core patterns), schema‑driven parameters, reproducible containers (Docker/Singularity)
-- **CI/CD & Quality**: GitHub Actions/Jenkins, smoke tests, docs automation; familiarity with ISO‑aligned quality practices
+- **Languages**: Python (advanced), R (advanced), Bash (proficient), SQL (proficient); Rust/PHP (familiar)
+- **Workflow Tools**: Nextflow DSL2 (nf‑core patterns), schema‑driven parameters; containers with Docker/Singularity
+- **CI/CD & Quality**: GitLab CI/CD, smoke tests, docs automation; JIRA for planning and MR traceability; ISO‑aligned quality familiarity
 - **HPC & Cloud**: Slurm; AWS familiarity (S3, EC2 basics)
 - **AI/LLM Prototyping**: Prompting and LLM‑assisted extraction for text triage (early‑stage prototypes)
 - **Reporting**: matplotlib, Plotly, Shiny, custom HTML reports
@@ -96,7 +99,7 @@ Full publication list available on request.
 
 ## Professional Development & Community
 - Nextflow Summit attendee; contributor to nf-core discussions and module reviews.
-- Internal trainer for reproducible workflow practices, Whalefish usage, and code review standards.
+- Internal trainer for reproducible workflow practices and code review standards.
 - Active in cross-functional initiatives linking wet-lab requirements with informatics pipelines.
 
 ---
