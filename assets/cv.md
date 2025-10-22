@@ -1,7 +1,7 @@
 # Pablo González de la Rosa
 
 Bioinformatician | Oxford Nanopore Technologies  
-Website: https://pgonzale60.github.io/ • Email: pgonzale60@gmail.com • GitHub: https://github.com/pgonzale60 • Remote-friendly (Oxford, UK)
+Website: [pgonzale60.github.io](https://pgonzale60.github.io/) • Email: pgonzale60@gmail.com • GitHub: [github.com/pgonzale60](https://github.com/pgonzale60) • Remote-friendly (Oxford, UK)
 
 ---
 
@@ -16,7 +16,7 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 - **Nextflow Automation**: DSL2, nf‑core patterns, schema‑driven parameters, channel design, and debugging.
 - **Reproducible Environments**: Docker/OCI, Singularity/Apptainer.
 - **Collaboration & Traceability**: GitLab merge requests, code review, changelog management; JIRA ticketing linked to MRs.
-- **CI/CD & Verification**: GitLab CI/CD, smoke tests, automated documentation.
+- **CI/CD & Quality**: GitLab CI/CD, smoke tests, automated documentation; quality assurance in ISO‑aligned settings.
 - **HPC & Cloud**: Slurm; working familiarity with AWS (S3, EC2 basics).
 - **Analysis & Glue**: Python (pandas, NumPy), R (tidyverse, Shiny), Bash; Rust/PHP (familiar).
 - **Reporting**: Coverage metrics (mosdepth), VCF stats, HTML report generation.
@@ -27,29 +27,32 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 
 ### Oxford Nanopore Technologies — Bioinformatician  
 *Oxford, UK • Nov 2023 – Present*
-- Built and maintain the `wf-pgx` Nextflow research workflow (available upon request); added representative datasets and automated documentation.
-- Supported biopharma workflows aimed toward regulatory compliance (team efforts): `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
-- Delivered Python utilities for variant calling/analysis across human, cattle, and bacterial datasets; integrated into pipelines and CI.
-- Collaboration & quality: GitLab CI/CD; JIRA ↔ MR traceability; code reviews. Speaking: active in bioinformatics tools journal club.
+- Built and maintained Nextflow pipelines for targeted sequencing (schema‑driven parameters, containerised modules, CI smoke tests).
+- Assembled and evolved the `wf-pgx` research workflow from a barebones template to a usable pipeline (available upon request); added representative datasets and documentation.
+- Co‑developed team workflows aimed toward regulatory compliance: `wf‑vax‑qc`, `wf‑plasmid‑qc`, and `wf‑installation‑qualification`.
+- Built Python utilities for variant calling and analysis across human, cattle, and bacterial datasets; integrated into pipelines and CI.
+- Established practices around GitLab CI/CD, JIRA ↔ MR traceability, and code review quality.
+- Presented journal club sessions on pipeline debugging and workflow patterns.
 
 ### Winter Genomics — Bioinformatics Intern  
 *Mexico City, Mexico • Aug 2013 – Nov 2015*
-- Performed microarray‑based expression profiling and genotyping; automated common analyses and QC.
-- Designed a MySQL‑backed variant database with a web interface to support collaborators’ queries and curation.
-- Built internal R scripts and contributed to pipeline automation for host–pathogen studies.
+- Designed and deployed a MySQL‑backed variant database with a web interface to support collaborators’ queries and curation workflows.
+- Developed R/Bash automation for microarray QC; standardised gene expression analyses and reduced turnaround time.
+- Contributed to host–pathogen comparative analysis workflows; supported publication‑grade datasets and figures.
 
 ### Wellcome Sanger Institute & University of Cambridge — Doctoral Researcher  
 *Cambridge, UK • 2020 – 2023*
-- Developed workflows to analyse large biological datasets (genomes and metagenomes).
-- Performed bioinformatic analyses of genomes and metagenomes.
-- Gave invited and contributed talks to a variety of audiences.
-- Provided guidance and training to students.
+- Architected workflows for large‑scale genomic and metagenomic analyses in evolutionary studies.
+- Automated genome assembly quality assessment using orthology and k‑mer metrics; integrated into multiple research projects to reduce manual validation.
+- Delivered invited and contributed talks at conferences and seminars on genome assembly and chromosome evolution.
+- Mentored MSc/PhD students in bioinformatics best practices and open‑source tooling; co‑authored peer‑reviewed publications.
 
 ---
 
 ## Selected Projects
-- **wf-pgx (ONT)**: Designed and now maintain flagship pharmaco-genomics workflow; uses automated container builds, regression suites, and robust documentation pipeline.
- - **Biopharma QC Workflows (team support)**: Contributed to workflows aimed toward regulatory compliance: `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
+- **wf-pgx (ONT)**: Assembled and evolved research-use pharmacogenomics workflow from a template; representative datasets and docs for internal/research users.
+- **Biopharma QC Workflows (team support)**: Contributed to workflows aimed toward regulatory compliance: `wf-vax-qc`, `wf-plasmid-qc`, and `wf-installation-qualification`.
+- **Verification Workflow Suite**: Reusable Nextflow modules for coverage reporting, variant metrics, and metrics diffs to validate releases across datasets.
 - **Chromosome-scale Genome Annotation (MSc)**: Nextflow workflow to annotate multi‑megabase animal genomes; integrated gene prediction, repeat masking, and evidence-driven refinement for mid-scale HPC.
 - **Assembly Completeness Assessment (PhD)**: Automated pipeline to assess completeness of newly assembled multi‑megabase animal genomes using orthology- and k‑mer–based metrics.
 - **GEO Differential Expression Automation (BSc thesis)**: Automated microarray-based differential expression across dozens of GEO experiments using GNU Make; downloaded datasets and Brainarray annotations, inferred experimental designs, executed group-vs-group contrasts, and summarised results in a single table.
@@ -69,7 +72,7 @@ Context and outcomes (selected):
 - Stevens, L., Martínez-Ugalde, I., *et al.* (2023). *Ancient diversity in host-parasite interaction genes in a model parasitic nematode.* Nature Communications, 14(1), 7776.
 - Gonzalez de la Rosa, P. M., *et al.* (2021). *A telomere-to-telomere assembly of Oscheius tipulae and the evolution of rhabditid nematode chromosomes.* G3, 11(1), jkaa020.
 
-Full list of publications: https://scholar.google.de/citations?hl=en&user=fzwjLYIAAAAJ&view_op=list_works&sortby=pubdate
+Full list of publications on [Google Scholar](https://scholar.google.de/citations?hl=en&user=fzwjLYIAAAAJ&view_op=list_works&sortby=pubdate)
 
 ---
 

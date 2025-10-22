@@ -34,20 +34,15 @@ def md_inline_format(text: str) -> str:
     # Manual line breaks: two spaces at EOL -> <br>
     text = re.sub(r"\s{2,}$", "<br>", text)
 
+    # Markdown links [text](url)
+    text = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)", r"<a href=\"\2\">\1</a>", text)
+
     # Bold **...**
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     # Italic *...* (avoid matching bold which is already replaced)
     text = re.sub(r"(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)", r"<em>\1</em>", text)
-    # Linkify URLs (http/https/www)
-    def _linkify(m: re.Match[str]) -> str:
-        url = m.group(0)
-        href = url
-        if url.startswith("www."):
-            href = f"https://{url}"
-        return f"<a href=\"{href}\">{url}</a>"
-
-    url_pattern = r"(?:(?:https?://)|(?:www\.))[\w\-._~:/?#\[\]@!$&'()*+,;=%]+"
-    text = re.sub(url_pattern, _linkify, text)
+    # Note: We intentionally don't auto-link raw URLs to avoid
+    # interfering with Markdown links; use explicit [text](url) in md.
     return text
 
 

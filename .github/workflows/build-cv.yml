@@ -41,16 +41,18 @@ jobs:
         run: |
           python3 scripts/generate_cv.py
 
-      - name: Install Google Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y wget fonts-liberation
-          wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt-get -fy install
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-      - name: Build PDF via headless Chrome
+      - name: Install Puppeteer
         run: |
-          bash scripts/build_cv_pdf.sh
+          npm i --no-save puppeteer@22
+
+      - name: Export PDF with Puppeteer (no header/footer)
+        run: |
+          node scripts/export_pdf.mjs assets/cv.html assets/cv.pdf
 
       - name: Commit updated CV assets
         uses: stefanzweifel/git-auto-commit-action@v5
