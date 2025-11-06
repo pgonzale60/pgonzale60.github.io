@@ -23,6 +23,8 @@ body {
     background-color: white;
 }
 
+html { scroll-behavior: smooth; }
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -77,6 +79,26 @@ header {
     padding: 80px 0 40px;
     text-align: center;
     position: relative;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.top-nav a {
+    color: white;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.top-nav a:hover {
+    background: rgba(255, 255, 255, 0.22);
+    color: white;
 }
 
 .profile-header {
