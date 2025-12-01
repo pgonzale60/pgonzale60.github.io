@@ -26,7 +26,7 @@ I use Nextflow as the backbone of bioinformatics automation, supported by Python
 ## Professional Experience
 
 ### Oxford Nanopore Technologies — Bioinformatician  
-*Oxford, UK • Nov 2023 – Present*
+*Oxford, UK • Nov 2023 – Nov 2025*
 - Built and maintained Nextflow pipelines for targeted sequencing (schema‑driven parameters, containerised modules, CI smoke tests).
 - Assembled and evolved the `wf-pgx` research workflow from a barebones template to a usable pipeline (available upon request); added representative datasets and documentation.
 - Co‑developed team workflows aimed toward regulatory compliance: `wf‑vax‑qc`, `wf‑plasmid‑qc`, and `wf‑installation‑qualification`.
